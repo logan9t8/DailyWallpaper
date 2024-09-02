@@ -6,7 +6,7 @@ from urlextract import URLExtract
 
 def imagePull():
 
-    jsonUrl = 'https://arc.msn.com/v3/Delivery/Placement?pid=209567&fmt=json&ua=WindowsShellClient%2F0&cdm=1&pl=en-US&lc=en-US&ctry=in&time=' + \
+    jsonUrl = 'https://arc.msn.com/v3/Delivery/Placement?pid=209567&fmt=json&ua=WindowsShellClient%2F0&cdm=1&pl=en-US&lc=en-US&ctry=us&time=' + \
         str(datetime.now(UTC).isoformat(timespec='seconds')) + 'Z'
     r = requests.get(jsonUrl)
     json = r.json()
